@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejercicio 1</title>
+	<style>
+		body{
+			background: #A9E2F3;
+		}
+		.vuelta{
+	position: absolute;
+	display: block;
+	top: 70px;
+	height: 50px;
+	width: 150px;
+	left: 1200px;
+	color: black;
+	font-size: 50px;
+	font-family: chiller;
+}
+.vuelta:hover{
+	color: orange;
+} 
+		.titu{
+			position: absolute;
+			top: 20px;
+			left: 450px;
+			background: #81F7F3;
+			font-family: forte;
+			font-size: 70px;
+			width: 450px;
+			height: 100px;
+		}
+		.pr{
+			position: absolute;
+			top: 200px;
+			left: 450px;
+			width: 150px;
+			height: 100px;
+			background: #D0F5A9;
+			font-size: 30px;
+			font-family: elephant;
+		}
+		.va{
+			position: absolute;
+			top: 200px;
+			left: 750px;
+			width: 150px;
+			height: 100px;
+			background: #D0F5A9;
+			font-size: 30px;
+			font-family: elephant;
+		}
+		.ingresar{
+			position: absolute;
+			top: 350px;
+			left: 600px;
+			font-size: 40px;
+			font-family: Cooper Black;
+			background: #E6E6E6;
+			width: 170px;
+			height: 70px;
+		}
+		.fac{
+			position: absolute;
+			top: 450px;
+			left: 500px;
+			font-size: 40px;
+			font-family: Narkisim;
+			width: 400px;
+			background: #F4FA58;
+			border-radius: 5%;
+		}
+
+	</style>
+</head>
+<body>
+	<a href="index.html">
+			<p class="vuelta">Volver</p>
+		</a>
+	<div class="titu"> <center>Servicio...</center></div>
+	<form>
+		<input type="text" id="pro" placeholder="Producto" class="pr" >
+		<input type="text" id="pre" placeholder="Costo" class="va">
+		<div class="ingresar" onclick="agregar()">Añadir</div>
+		</div>
+	</form>
+	<div class="fac" id="fa"><div class="sh"><center> Factura...</center></div></div>
+	<script>
+		function agregar() {
+			n=fa.innerHTML;
+			p=pro.value;
+			pr=pre.value;
+			o=p+" "+pr;
+			n=fa.innerHTML+o;
+			fa.innerHTML=n+"<br>";
+		}
+	</script>
+</body>
+</html>
